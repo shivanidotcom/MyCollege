@@ -1,25 +1,27 @@
 import React from 'react'
-
 import {BrowserRouter as Router ,Routes,Route} from 'react-router-dom'
 import Auth from './Auth'
 import User  from './User'
-import About from './About'
-import Blogs from './Blogs'
+import Navbar from "./components/Navbar";
+
+import HeroSection from './components/HeroSection';
+import { RouterSharp } from '@material-ui/icons';
 
 
 const App = () => {
   return (
-    <Router>
+     
+    <div>
+     
       <Routes>
-        <Route path="/" element={<Auth/>} />
-        
-        <Route path='/about' element={<About/>} />
-        
-        <Route path='/blogs' element={<Blogs/>} />
-        <Route path="/user" element={<User />} />
+        <Route path="/" element={<HeroSection/>} />
+
+        <Route path="/auth" element={<Auth />} />
 
       </Routes>
-    </Router>
+    
+    </div>
+
   );
 }
 

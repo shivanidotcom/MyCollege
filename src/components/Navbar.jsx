@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 
 
 function Navbar() {
@@ -46,9 +46,11 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <Link to="/auth">
+          
             Student 
-          </a>
+          
+          </Link>
         </li>
         
         <li className="nav__item">

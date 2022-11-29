@@ -84,3 +84,14 @@ a {
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
 }
+.footer{
+  background: rgb(0, 33, 65);
+  padding: 20px;
+}
+.copyright{
+  background: rgb(0, 33, 65);
+  color: white;
+  font-size: 22px;
+  
+  
+}
